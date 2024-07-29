@@ -5,7 +5,7 @@ import { request } from "axios";
 
 loadStaffList();
 
-new Command("aichat", (username, args) => {
+new Command("aichat", async (username, args) => {
     let prompt = args.join(" ");
     
     if (staff.includes(username)) {
